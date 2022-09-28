@@ -22,7 +22,7 @@ html {
 */
 
 body {
-    background-image: url(/imagens/background-predio-g.jpg);
+    background-image: url(../imagens/background-predio-g.jpg);
     background-position: top;
     background-color: var(--cor-principal);
     transition: 1000ms ease-in-out 0s;
