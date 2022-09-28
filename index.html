@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Matheus Augusto</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <div class="header-container">
+        <div></div>
+        <header>
+            <h1>Matheus Augusto</h1>
+            <label class="burguer" onclick="disableScroll()">
+                <div class="trace"></div>
+                <div class="trace"></div>
+                <div class="trace"></div>
+            </label>
+        </header>
+        <div class="info">
+            <img src="#" alt="">
+            <p><span>Bem-Vindo</span> ao meu Portfólio! <br> Meu nome é Matheus Augusto e eu sou Desenvolvedor.</p>
+            <div class="social-media">
+                <a href="#">LinkedIn</a>
+                <a href="#">Github</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="conhecimentos">
+            <h1>Conhecimentos</h1>
+
+        </section>
+        <section class="projetos">
+            <h1>Projetos</h1>
+            
+        </section>
+        <section class="sobre-mim">
+            <h1>Sobre Mim</h1>
+
+        </section>
+        <section class="contato">
+            <h1>Contato</h1>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        const menu = document.querySelector('header');
+        const body = document.querySelector('body');
+
+        function activeScroll() {
+            menu.classList.toggle('ativo', scrollY > 100);
+            body.classList.toggle('transp', scrollY > 100);
+        }
+
+        window.addEventListener('scroll', activeScroll)
+    </script>
+</body>
+</html>
