@@ -32,7 +32,7 @@ body {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/background-predio-g.jpg);
 }
 
-/* Header    */
+/* Header */
 
 div.header-container {
     width: 100vw;
@@ -116,7 +116,7 @@ div.header-container > div.info a {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 div.header-container > div.info a:hover {
@@ -196,17 +196,53 @@ main section.projetos {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/prog1.jpg);
     background-size: cover;
     background-position: top;
-    height: 600px;
+    height: 700px;
+}
+
+main section.projetos a {
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    display: block;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 20px;
+    transition: .3s ease-in-out;
+}
+
+main section.projetos a:hover {
+    background-color: green;
+    border: 1px solid green;
+    
+}
+
+section.projetos div.texto {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+}
+
+main section.projetos h2 {
+    color: whitesmoke;
+    font-size: medium;
+    text-align: center;
+    width: 150px;
+    margin: 5px;
 }
 
 main > section.projetos p {
     height: 100px;
-    width: 70%;
+    width: 90%;
     color: whitesmoke;
     text-align: justify;
     font-size: small;
     display: inline-block;
+    margin: 5px 10px;
 }
+
 
 main section.projetos > div.projetos-container {
     height: 94%;
@@ -217,32 +253,34 @@ main section.projetos > div.projetos-container {
     justify-content: space-around;
 }
 
+main section.projetos > div.projetos-container .img {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    border-radius: 20px 0px 0px 20px;
+    border-right: 1px solid whitesmoke;
+    background-size: cover;
+}
+
 main section.projetos > div.projetos-container div#projeto {
     width: 85%;
     height: 30%;
+    display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
     border-radius: 20px;
 }
 
 /* Projeto: Xadrez */
 
-main section.projetos > div.projetos-container > div.chess-java {
+div.chess-java .img {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/chess.jpg);
 }
 
-main section.projetos > div.projetos-container .img {
-    height: 100%;
-    width: 30%;
-    border-radius: 20px 0px 0px 20px;
-    border-right: 1px solid black;
-    display: inline-block;
+div.chess-java > div.img:hover {
+    width: 100%;
+    z-index: 9000;
 }
-
-main section.projetos > div.projetos-container > div.chess-java > .img {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.8)), url(../imagens/chess.jpg);
-    background-size: cover;
-}
-
 
 main section.sobre-mim {
     height: 600px;
