@@ -191,6 +191,7 @@ main > section.conhecimentos > div.front-end > .imagens {
 
 main > section.conhecimentos img {
     height: 80px;
+    width: 115px;
 }
 
 /* Projetos */
