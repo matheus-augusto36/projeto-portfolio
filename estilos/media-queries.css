@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/* Typical Device breakpoints 
+Pequenas telas: até 600px
+Celular: 600 até 768px
+Tablet: 768 até 992px
+PC: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/*Impressão*/
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita por Matheus Augusto';
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display: none;}
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+}
+
+/*PC*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+/*Grandes Telas*/
+@media screen and (min-width: 1200px) {
+ 
+}
