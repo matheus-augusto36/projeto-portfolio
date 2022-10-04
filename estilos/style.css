@@ -22,18 +22,21 @@ html {
 */
 
 body {
-    background-image: url(../imagens/background-predio-g.jpg);
-    background-position: top;
+    background-image: url(../imagens/backgroun-predio-xg.jpg);
     background-size: cover;
+    background-position: center;
     background-color: var(--cor-principal);
-    transition: 1000ms ease-in-out 0s;
+    transition: 1300ms ease-in-out 0s;
 }
 
 .transp {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/background-predio-g.jpg);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../imagens/backgroun-predio-xg.jpg);
+    background-position: left;
+    background-size: cover;
+    transition: 1300ms ease-in-out 0s;
 }
 
-/* Header */
+/*-------------------------------------------------- Header -----------------------------------------------*/
 
 div.header-container {
     width: 100vw;
@@ -53,7 +56,7 @@ header {
 }
 
 .ativo {
-    background-color: rgb(87,119,136);
+    background-color: #698D9F;
 }
 
 header > h1 {
@@ -61,7 +64,7 @@ header > h1 {
     font-size: 1.5em;
 }
 
-/* Menu Hambúrguer */
+/*------------------------------------------------- Menu Hambúrguer -----------------------------------------------*/
 
 .burguer {
     height: 100px;
@@ -87,7 +90,7 @@ header > h1 {
     margin: 5px;
 }
 
-/* Informações */
+/*--------------------------------------------------- Informações ----------------------------------------------*/
 
 div.header-container > div.info {
     width: 65vw;
@@ -126,7 +129,7 @@ div.header-container > div.info a:hover {
     background-color: whitesmoke;
 }
 
-/* Conhecimentos */
+/*--------------------------------------------- Conhecimentos -------------------------------------------*/
 
 main {
     width: 100%;
@@ -194,7 +197,7 @@ main > section.conhecimentos img {
     width: 115px;
 }
 
-/* Projetos */
+/* ------------------------------- Projetos ------------------------------------------*/
 
 main section.projetos {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/prog1.jpg);
@@ -203,7 +206,7 @@ main section.projetos {
     height: 700px;
 }
 
-main section.projetos a {
+main a {
     background-color: transparent;
     border: 1px solid whitesmoke;
     color: whitesmoke;
@@ -216,7 +219,7 @@ main section.projetos a {
     transition: .3s ease-in-out;
 }
 
-main section.projetos a:hover {
+main a:hover {
     background-color: green;
     border: 1px solid green;
     
@@ -277,7 +280,7 @@ main section.projetos > div.projetos-container div#projeto {
     border-radius: 20px;
 }
 
-/* Projeto: Xadrez */
+/* ---------------------------- Projeto: Xadrez ------------------------------*/
 
 div.chess-java .img {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/chess.jpg);
@@ -288,10 +291,90 @@ div.chess-java > div.img:hover {
     z-index: 9000;
 }
 
+
+/*------------------------------ Sobre Mim ------------------------------------------*/
+
+main .info-container {
+    height: 94%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/acoustic-guitar-background.jpg);
+    background-size: cover;
+}
+
+main section.info-sobre-mim h2 {
+    color: whitesmoke;
+    font-size: medium;
+    text-align: center;
+    width: 150px;
+    margin: 5px;
+    top: 0%;
+}
+
 main section.sobre-mim {
     height: 600px;
+
 }
+
+section.sobre-mim > .info-container > .info-sobre-mim {
+    width: 80%;
+    height: 90%;
+    border: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+main section.sobre-mim > div.info-container .img {
+    display: flex;
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+    border: 1px solid whitesmoke;
+    background-size: cover;
+    background-position: left center;
+    background-image: url(../imagens/eu_portfolio1.jpg);
+    margin-top: 8px;
+}
+
+
+section.sobre-mim div.texto {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+main section.sobre-mim h2 {
+    color: whitesmoke;
+    font-size: medium;
+    text-align: center;
+    width: 150px;
+    margin: 5px;
+}
+
+main > section.sobre-mim p {
+    height: 100px;
+    width: 90%;
+    color: whitesmoke;
+    text-align: justify;
+    font-size: small;
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+main > section.sobre-mim a {
+    width: 90px;
+}
+
 
 main section.contato {
     height: 300px;
 }
+
