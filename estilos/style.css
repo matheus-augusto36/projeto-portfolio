@@ -301,7 +301,7 @@ main .info-container {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/acoustic-guitar-background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imagens/acoustic-guitar-background.jpg);
     background-size: cover;
 }
 
@@ -315,8 +315,8 @@ main section.info-sobre-mim h2 {
 }
 
 main section.sobre-mim {
-    height: 600px;
-
+    height: 730px;
+    min-height: 690px;
 }
 
 section.sobre-mim > .info-container > .info-sobre-mim {
@@ -326,6 +326,7 @@ section.sobre-mim > .info-container > .info-sobre-mim {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -373,8 +374,66 @@ main > section.sobre-mim a {
     width: 90px;
 }
 
+/*------------------------- Contato -----------------------------*/
+
 
 main section.contato {
     height: 300px;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+/*--------------------- Footer ----------------------------*/
+footer {
+    height: 250px;
+    background-image: linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65));
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+footer h1 {
+    width: 100%;
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+footer h2 {
+    width: 100%;
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    font-size: large;
+    margin: 15px 0px;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px 20px 0px;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer img {
+    height: 40px;
+    width: 40px;
+}
+
+footer p {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 10px;
 }
 
