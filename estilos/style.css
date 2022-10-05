@@ -379,6 +379,39 @@ main > section.sobre-mim a {
 
 main section.contato {
     height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imagens/contact-background.jpg);
+    background-position: right;
+    background-size: cover;
+}
+
+.contato > .icon-container {
+    height: 94%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .email, .telefone {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.contato img {
+    height: 50px;
+    width: 50px;
+}
+
+.contato p {
+    color: white;
+    text-align: justify;
+    font-size: small;
+    width: 250px;
+    margin: 20px;
 }
 
 main {
