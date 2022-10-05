@@ -12,7 +12,7 @@
 }
 
 html {
-    background-color: var(--cor-principal);
+    background-color: whitesmoke;
 }
 
 /*
@@ -22,15 +22,15 @@ html {
 */
 
 body {
-    background-image: url(../imagens/backgroun-predio-xg.jpg);
+    background-image: url(../imagens/backgroun-predio-xg1.png);
     background-size: cover;
     background-position: center;
-    background-color: var(--cor-principal);
+    background-color: whitesmoke;
     transition: 1300ms ease-in-out 0s;
 }
 
 .transp {
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../imagens/backgroun-predio-xg.jpg);
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../imagens/backgroun-predio-xg1.png);
     background-position: left;
     background-size: cover;
     transition: 1300ms ease-in-out 0s;
