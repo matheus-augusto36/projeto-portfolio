@@ -22,15 +22,14 @@ html {
 */
 
 body {
-    background-image: url(../imagens/backgroun-predio-xg1.png);
     background-size: cover;
     background-position: center;
-    background-color: whitesmoke;
+    background-color: rgb(87 119 136);
     transition: 1300ms ease-in-out 0s;
 }
 
 .transp {
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../imagens/backgroun-predio-xg1.png);
+    background-color: rgb(87 119 136);
     background-position: left;
     background-size: cover;
     transition: 1300ms ease-in-out 0s;
@@ -42,6 +41,7 @@ div.header-container {
     width: 100vw;
     height: 80vh;
     min-height: 715px;
+    transition: 200ms ease-in-out 0s;
 }
 
 header {
@@ -53,41 +53,61 @@ header {
     justify-content: space-between;
     position: fixed;
     transition: 200ms ease-in-out 0s;
+    right: 0;
 }
 
 .ativo {
     background-color: #698D9F;
 }
 
-header > h1 {
-    margin-left: 15px;
+header > h1.nome {
+    margin-left: 30px;
     font-size: 1.5em;
 }
 
 /*------------------------------------------------- Menu Hambúrguer -----------------------------------------------*/
 
-.burguer {
-    height: 100px;
-    width: 89px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: 400ms ease-in-out 0s;
+.menu {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65));
+    position: fixed;
+    transition: 200ms ease-in-out 2s;
 }
 
-.burguer .trace {
+.burguer:checked + .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+.burguer:checked + .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.burguer:checked + .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+.burguer {
+    display: none;
+}
+
+.menu-hamburguer {
+    cursor: pointer;
+}
+
+.menu-hamburguer .trace {
     width: 40px;
     height: 1px;
     background-color: black;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
-    margin: 5px;
+    margin: 9px;
 }
 
 /*--------------------------------------------------- Informações ----------------------------------------------*/
@@ -378,7 +398,7 @@ main > section.sobre-mim a {
 
 
 main section.contato {
-    height: 300px;
+    height: 260px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imagens/contact-background.jpg);
     background-position: right;
     background-size: cover;
@@ -398,12 +418,12 @@ main section.contato {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0px;
+    margin: 10px;
 }
 
 .contato img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
 
 .contato p {
@@ -411,7 +431,7 @@ main section.contato {
     text-align: justify;
     font-size: small;
     width: 250px;
-    margin: 20px;
+    margin-left: 12px;
 }
 
 main {

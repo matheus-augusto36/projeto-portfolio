@@ -10,9 +10,11 @@
 </head>
 <body>
     <div class="header-container">
+        <div class="menu"></div>
         <header>
-            <h1>Matheus Augusto</h1>
-            <label class="burguer" onclick="disableScroll()">
+            <h1 class="nome">Matheus Augusto</h1>
+            <input type="checkbox" class="burguer" id="toggle" onclick="disableScroll()">
+            <label class="menu-hamburguer" for="toggle">
                 <div class="trace"></div>
                 <div class="trace"></div>
                 <div class="trace"></div>
@@ -120,6 +122,23 @@
         }
 
         window.addEventListener('scroll', activeScroll)
+
+        window.onload = function() {
+         var burguer = document.querySelector("input[class='burguer']");
+         var menu = document.querySelector("div[class='menu']");
+         var h1 = document.querySelector("h1[class='nome']");
+
+
+         burguer.onclick = function() {
+            if (menu.style.display == "block") {
+                menu.style.display = "none"
+                h1.style.display = "block"
+            } else {
+                menu.style.display = "block"
+                h1.style.display = "none"
+            }
+         };
+    };
     </script>
 </body>
 </html>
