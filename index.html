@@ -12,10 +12,10 @@
     <div class="header-container">
         <div class="menu">
             <ul>
-                <li><a href="#" data-after="conhecimentos">Conhecimentos</a></li>
-                <li><a href="#" data-after="projetos">Projetos</a></li>
-                <li><a href="#" data-after="sobre-mim">Sobre-mim</a></li>
-                <li><a href="#" data-after="contato">Contato</a></li>
+                <li><a href="#conhecimentos" onclick="fecharMenu()">Conhecimentos</a></li>
+                <li><a href="#projetos" onclick="fecharMenu()">Projetos</a></li>
+                <li><a href="#sobre-mim" onclick="fecharMenu()">Sobre-mim</a></li>
+                <li><a href="#contato" onclick="fecharMenu()">Contato</a></li>
             </ul>
         </div>
         <header>
@@ -136,8 +136,6 @@
             var h1 = document.querySelector("h1[class='nome']");
             var headerAtivo = document.querySelector("header[class='ativo']")
             var header = document.querySelector("header")
-            var link = document.querySelector("a[class='link']")
-
 
             burguer.onclick = function() {
                 if (menu.style.display == "flex") {
@@ -161,6 +159,12 @@
                 }
             };
         };
+
+        function fecharMenu() {
+            var menu = document.querySelector("div[class='menu']");
+            menu.style.display = "none"
+            document.documentElement.style.overflow = 'auto';
+        }
     </script>
 </body>
 </html>
