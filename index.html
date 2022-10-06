@@ -10,10 +10,17 @@
 </head>
 <body>
     <div class="header-container">
-        <div class="menu"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#" data-after="conhecimentos">Conhecimentos</a></li>
+                <li><a href="#" data-after="projetos">Projetos</a></li>
+                <li><a href="#" data-after="sobre-mim">Sobre-mim</a></li>
+                <li><a href="#" data-after="contato">Contato</a></li>
+            </ul>
+        </div>
         <header>
             <h1 class="nome">Matheus Augusto</h1>
-            <input type="checkbox" class="burguer" id="toggle" onclick="disableScroll()">
+            <input type="checkbox" class="burguer" id="toggle">
             <label class="menu-hamburguer" for="toggle">
                 <div class="trace"></div>
                 <div class="trace"></div>
@@ -30,7 +37,7 @@
         </div>
     </div>
     <main>
-        <section class="conhecimentos">
+        <section class="conhecimentos" id="conhecimentos">
             <h1>Conhecimentos</h1>
             <div class="back-end">
                 <img src="imagens/java-logo.png" alt="">
@@ -47,7 +54,7 @@
             </div>
 
         </section>
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h1>Projetos</h1>
             <div class="projetos-container">
                 <div class="chess-java" id="projeto">
@@ -78,7 +85,7 @@
             </div>
             
         </section>
-        <section class="sobre-mim">
+        <section class="sobre-mim" id="sobre-mim">
             <h1>Sobre Mim</h1>
             <div class="info-container">
                 <div class="info-sobre-mim">
@@ -90,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section class="contato">
+        <section class="contato" id="contato">
             <h1>Contato</h1>
             <div class="icon-container">
                 <div class="email"><img src="/imagens/email-icon.png" alt=""><p id="email">silvamatheusaugusto36@gmail.com</p></div>
@@ -124,21 +131,36 @@
         window.addEventListener('scroll', activeScroll)
 
         window.onload = function() {
-         var burguer = document.querySelector("input[class='burguer']");
-         var menu = document.querySelector("div[class='menu']");
-         var h1 = document.querySelector("h1[class='nome']");
+            var burguer = document.querySelector("input[class='burguer']");
+            var menu = document.querySelector("div[class='menu']");
+            var h1 = document.querySelector("h1[class='nome']");
+            var headerAtivo = document.querySelector("header[class='ativo']")
+            var header = document.querySelector("header")
+            var link = document.querySelector("a[class='link']")
 
 
-         burguer.onclick = function() {
-            if (menu.style.display == "block") {
-                menu.style.display = "none"
-                h1.style.display = "block"
-            } else {
-                menu.style.display = "block"
-                h1.style.display = "none"
-            }
-         };
-    };
+            burguer.onclick = function() {
+                if (menu.style.display == "flex") {
+                    menu.style.display = "none"
+                    h1.style.display = "block"
+
+                    document.body.scroll = "yes";
+                    document.documentElement.style.overflow = 'auto';
+                    
+                    headerAtivo.style.backgroundColor = "rgb(87 119 136)"
+                    header.style.backgroundColor = "rgb(87 119 136)"
+                } else {
+                    menu.style.display = "flex"
+                    h1.style.display = "none"
+
+                    document.documentElement.style.overflow = 'hidden';
+                    document.body.scroll = "no";
+                    
+                    headerAtivo.style.backgroundImage = "linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65))"
+                    header.style.backgroundImage = "linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65))"
+                }
+            };
+        };
     </script>
 </body>
 </html>

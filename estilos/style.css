@@ -57,7 +57,7 @@ header {
 }
 
 .ativo {
-    background-color: #698D9F;
+    background-color: rgb(87 119 136);
 }
 
 header > h1.nome {
@@ -68,27 +68,48 @@ header > h1.nome {
 /*------------------------------------------------- Menu Hambúrguer -----------------------------------------------*/
 
 .menu {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     width: 100vw;
+    padding: 20px 10px;
     background-image: linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65));
     position: fixed;
     transition: 200ms ease-in-out 2s;
 }
 
-.burguer:checked + .trace:nth-child(1) {
+.menu > ul {
+    height: 50vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+#toggle:checked + .menu-hamburguer .trace:nth-child(1) {
     transform: rotate(45deg);
     top: 47px;
 }
 
-.burguer:checked + .trace:nth-child(2) {
+#toggle:checked + .menu-hamburguer .trace:nth-child(2) {
     transform: translate(-100px);
     width: 30px;
     visibility: hidden;
     opacity: 0;
 }
 
-.burguer:checked + .trace:nth-child(3) {
+#toggle:checked + .menu-hamburguer .trace:nth-child(3) {
     transform: rotate(-45deg);
     top: 48px;
 }
@@ -98,16 +119,40 @@ header > h1.nome {
 }
 
 .menu-hamburguer {
+    height: 100px;
+    width: 99px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
     cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
 }
 
 .menu-hamburguer .trace {
-    width: 40px;
-    height: 1px;
+    width: 50px;
+    height: 2px;
     background-color: black;
+    position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
-    margin: 9px;
+}
+
+.menu-hamburguer .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.menu-hamburguer .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.menu-hamburguer .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
 }
 
 /*--------------------------------------------------- Informações ----------------------------------------------*/
