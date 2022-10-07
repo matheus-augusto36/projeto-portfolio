@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 html {
     background-color: whitesmoke;
 }
@@ -505,22 +509,22 @@ footer {
     justify-content: space-evenly;
 }
 
-footer h1 {
-    width: 100%;
+
+footer h1, h2  {
+    width: 90%;
     display: inline-block;
     color: whitesmoke;
     text-align: center;
+}
+
+footer h1 { 
     font-size: 1.5em;
     margin-top: 20px;
 }
 
 footer h2 {
-    width: 100%;
-    display: inline-block;
-    color: whitesmoke;
-    text-align: center;
     font-size: large;
-    margin: 15px 0px;
+    margin: 15px 0px 15px 0px;
 }
 
 footer ul {
