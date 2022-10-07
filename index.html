@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Matheus Augusto</title>
-    <link rel="stylesheet" href="estilos/style.css" media="screen">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
@@ -15,11 +15,19 @@
                 <li><a href="#conhecimentos" onclick="fecharMenu()">Conhecimentos</a></li>
                 <li><a href="#projetos" onclick="fecharMenu()">Projetos</a></li>
                 <li><a href="#sobre-mim" onclick="fecharMenu()">Sobre-mim</a></li>
-                <li><a href="#contato" onclick="fecharMenu()">Contato</a></li>
+                <li><a href="mailto:silvamatheusaugusto36@gmail.com" onclick="fecharMenu()">Contato</a></li>
             </ul>
         </div>
         <header>
             <h1 class="nome">Matheus Augusto</h1>
+            <div id="menu">
+                <ul>
+                    <li><a href="#conhecimentos" onclick="fecharMenu()">Conhecimentos</a></li>
+                    <li><a href="#projetos" onclick="fecharMenu()">Projetos</a></li>
+                    <li><a href="#sobre-mim" onclick="fecharMenu()">Sobre-mim</a></li>
+                    <li><a href="mailto:silvamatheusaugusto36@gmail.com" onclick="fecharMenu()">Contato</a></li>
+                </ul>
+            </div>
             <input type="checkbox" class="burguer" id="toggle">
             <label class="menu-hamburguer" for="toggle">
                 <div class="trace"></div>
@@ -28,30 +36,31 @@
             </label>
         </header>
         <div class="info">
-            <img src="#" alt="">
-            <p><span>Bem-Vindo</span> ao meu Portfólio! <br> Meu nome é Matheus Augusto e eu sou Desenvolvedor.</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/matheus-silva-582230215/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/matheus-augusto36" target="_blank">Github</a>
+            <div class="info-content">
+                <img src="#" alt="">
+                <p>Bem-Vindo ao meu Portfólio! <br> Meu nome é <span>Matheus Augusto </span><br> e eu sou <span>Desenvolvedor</span>.</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/matheus-silva-582230215/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/matheus-augusto36" target="_blank">Github</a>
+                </div>
             </div>
         </div>
     </div>
     <main>
         <section class="conhecimentos" id="conhecimentos">
             <h1>Conhecimentos</h1>
-            <div class="back-end">
-                <img src="imagens/java-logo.png" alt="">
-                <p>Programação Orientada a Objetos | Princípios SMART | Padrão de Projeto: Data Acess Object (DAO) | Interfaces com Java Swing | Estrutura de Dados: Arrays e Coleções | Tratamento de Exceções </p>
-            </div>
-
-            <div class="front-end">
-                <div class="imagens">
-                    <img src="imagens/html-logo.png" alt="">
-                    <img src="imagens/css-logo.png" alt="">
-                    <img src="imagens/php-logo.png" alt="">
+                <div class="back-end">
+                    <img src="imagens/java-logo.png" alt="">
+                    <p>Programação Orientada a Objetos | Princípios SMART | Padrão de Projeto: Data Acess Object (DAO) | Interfaces com Java Swing | Estrutura de Dados: Arrays e Coleções | Tratamento de Exceções </p>
                 </div>
-                <p>Criação e Estilização de páginas da Web com HTML5 e CSS3 | Desenvolvimento de sistemas Web com CRUD em PHP | Formulários </p>
-            </div>
+                <div class="front-end">
+                    <div class="imagens">
+                        <img src="imagens/html-logo.png" alt="">
+                        <img class="css" src="imagens/css-logo.png" alt="">
+                        <img src="imagens/php-logo.png" alt="">
+                    </div>
+                    <p>Criação e Estilização de páginas da Web com HTML5 e CSS3 | Desenvolvimento de sistemas Web com CRUD em PHP | Formulários </p>
+                </div>
 
         </section>
         <section class="projetos" id="projetos">
@@ -110,12 +119,12 @@
         <h1>Matheus Augusto</h1>
         <h2>Linguagens de Programação</h2>
         <ul>
-            <li><a href=""><img src="/imagens/java-icon.png" alt="" class="java"></a></li>
-            <li><a href=""><img src="/imagens/php-icon.png" alt="" class="php"></a></li>
-            <li><a href=""><img src="/imagens/python-icon.png" alt="" class="python"></a></li>
-            <li><a href=""><img src="/imagens/html-icon.png" alt="" class="html"></a></li>
-            <li><a href=""><img src="/imagens/css-icon.png" alt="" class="css"></a></li>
-            <li><a href=""><img src="/imagens/js-icon.png" alt="" class="js"></a></li>
+            <li><a href="https://docs.oracle.com/en/java/" target="_blank"><img src="/imagens/java-icon.png" alt="" class="java"></a></li>
+            <li><a href="https://www.php.net/manual/pt_BR/" target="_blank"><img src="/imagens/php-icon.png" alt="" class="php"></a></li>
+            <li><a href="https://docs.python.org/3/" target="_blank"><img src="/imagens/python-icon.png" alt="" class="python"></a></li>
+            <li><a href="https://www.w3schools.com/html/default.asp" target="_blank"><img src="/imagens/html-icon.png" alt="" class="html"></a></li>
+            <li><a href="https://www.w3schools.com/css/" target="_blank"><img src="/imagens/css-icon.png" alt="" class="css"></a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="/imagens/js-icon.png" alt="" class="js"></a></li>
         </ul>
         <p>Copyright © 2022 Matteo</p>
     </footer>
@@ -123,19 +132,11 @@
         const menu = document.querySelector('header');
         const body = document.querySelector('body');
 
-        function activeScroll() {
-            menu.classList.toggle('ativo', scrollY > 100);
-            body.classList.toggle('transp', scrollY > 100);
-        }
-
-        window.addEventListener('scroll', activeScroll)
-
         window.onload = function() {
-            var burguer = document.querySelector("input[class='burguer']");
-            var menu = document.querySelector("div[class='menu']");
-            var h1 = document.querySelector("h1[class='nome']");
-            var headerAtivo = document.querySelector("header[class='ativo']")
-            var header = document.querySelector("header")
+            let burguer = document.querySelector("input[class='burguer']");
+            let menu = document.querySelector("div[class='menu']");
+            let h1 = document.querySelector("h1[class='nome']");
+            let header = document.querySelector("header");
 
             burguer.onclick = function() {
                 if (menu.style.display == "flex") {
@@ -144,26 +145,28 @@
 
                     document.body.scroll = "yes";
                     document.documentElement.style.overflow = 'auto';
+                    header.style.background = "rgba(27, 29, 32, 0.836)";
                     
-                    headerAtivo.style.backgroundColor = "rgb(87 119 136)"
-                    header.style.backgroundColor = "rgb(87 119 136)"
                 } else {
                     menu.style.display = "flex"
                     h1.style.display = "none"
 
                     document.documentElement.style.overflow = 'hidden';
                     document.body.scroll = "no";
-                    
-                    headerAtivo.style.backgroundImage = "linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65))"
-                    header.style.backgroundImage = "linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65))"
+                    header.style.background = "linear-gradient(to right, rgb(36, 35, 35), rgb(66, 65, 65))";
+                    menu.setAttribute("-webkit-animation", "volta 0.5s")
                 }
             };
         };
 
         function fecharMenu() {
-            var menu = document.querySelector("div[class='menu']");
-            menu.style.display = "none"
+            let burguer = document.querySelector("input[class='burguer']");
+            let header = document.querySelector("header");
+            let menu = document.querySelector("div[class='menu']");
+            menu.style.display = "none";
             document.documentElement.style.overflow = 'auto';
+            header.style.background = "rgba(27, 29, 32, 0.836);";
+            burguer.checked = false;
         }
     </script>
 </body>

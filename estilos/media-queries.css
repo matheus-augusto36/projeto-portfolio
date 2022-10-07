@@ -30,21 +30,133 @@ Grandes telas: acima de 1200px
         color: black;
     }
 
-    #phone {display: none;}
-    #tablet {display: none;}
-    #print {display: block;}
-    #pc {display: none;}
-    #tv {display: none;}
-}
-
-/*Tablet*/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+    img {
+        height: 15px;
+    }
 
 }
 
 /*PC*/
-@media screen and (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px)/* and (max-width: 1200px) */{
     
+
+    /*---------------------- Header ----------------------*/
+    header {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #menu {
+        display: block;
+        width: 600px;
+    }
+
+    #toggle, .menu-hamburguer {
+        display: none;
+    }
+
+    #menu > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #menu > ul li {
+        display: inline-block;
+    }
+
+    #menu > ul li a {
+        text-decoration: none;
+        color: rgb(209, 198, 198);
+        text-transform: uppercase;
+        font-weight: bolder;
+        transition: .3s ease-in-out;
+    }
+
+    #menu > ul li a:hover {
+        color: white;
+    }
+
+    /*------------------------ Info ------------------------*/
+    
+    div.header-container > div.info {
+        height: 650px;
+    }
+    
+    div.header-container > div.info p {
+        font-size: xx-large;
+        
+    }
+
+    /*------------------------ Sections ------------------------*/
+
+    section.conhecimentos {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    section.conhecimentos h1{
+        position: absolute;
+        top: 0;
+    }
+
+    section.conhecimentos div.back-end {
+        height: 100%;
+    }
+
+    section.conhecimentos > div.back-end > img {
+        margin-bottom: 50px;
+    }
+
+    section.conhecimentos div p {
+        font-size: large;
+        padding-bottom: 150px;
+    }
+
+    section.conhecimentos > div.front-end > .imagens img {
+        height: 90px;
+        padding-bottom: 20px;
+    }
+
+    section.conhecimentos > div.front-end > .imagens .css {
+        width: 170px;
+    }
+
+    /*------------------------ Projetos ------------------------*/
+    
+    section.projetos > .projetos-container h2 {
+        font-size: x-large;
+        width: auto;
+    }
+    
+    section.projetos > .projetos-container p {
+        font-size: large;
+    }
+
+    /*------------------------ Sobre-mim ------------------------*/
+
+    main > section.sobre-mim p {
+        font-size: large;
+    }
+
+    main .info-container {
+        background-position: center;
+        background-size: cover;
+    }
+    /*------------------------ Contato ------------------------*/
+
+    .contato p {
+        font-size: large;
+    }
+
+    .contato .email, .telefone {
+        width: 500px;
+    }
 }
 
 /*Grandes Telas*/
