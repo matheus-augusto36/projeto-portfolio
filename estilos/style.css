@@ -379,7 +379,7 @@ main section.projetos > div.projetos-container div#projeto:hover {
     border-bottom: 0;
     background: transparent;
     -webkit-transform: skew(20deg); /* Chrome, Opera */
-    transform: skew(51deg); /* Padrão */
+    transform: skew(40deg); /* Padrão */
 }
 
 #diagonal p {
