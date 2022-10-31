@@ -138,6 +138,30 @@ Grandes telas: acima de 1200px
         font-size: large;
     }
 
+    #diagonal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 100%;
+        background: transparent;
+        border: 2px solid whitesmoke;
+        border-top: 0;
+        border-bottom: 0;
+        -webkit-transform: skew(20deg); /* Chrome, Opera */
+        transform: skew(60deg); /* Padrão */
+        z-index: 1000;
+    }
+
+    #diagonal p {
+        max-height: 20px;
+        transform: rotate(85deg);
+        font-size: large;
+        font-weight: 500;
+        padding: 3px;
+    }
+
     /*------------------------ Sobre-mim ------------------------*/
 
     main > section.sobre-mim p {
@@ -162,4 +186,11 @@ Grandes telas: acima de 1200px
 /*Grandes Telas*/
 @media screen and (min-width: 1200px) {
  
+    #diagonal p {
+        max-height: 20px;
+        transform: rotate(85deg);
+        font-size: large;
+        font-weight: 500;
+        padding: 3px;
+    }
 }

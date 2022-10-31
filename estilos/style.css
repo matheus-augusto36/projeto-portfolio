@@ -303,6 +303,7 @@ main a:hover {
     
 }
 
+
 section.projetos div.texto {
     display: flex;
     flex-direction: column;
@@ -366,10 +367,47 @@ main section.projetos > div.projetos-container div#projeto:hover {
     z-index: 8;
 }
 
+#diagonal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 100%;
+    border: 2px solid whitesmoke;
+    border-top: 0;
+    border-bottom: 0;
+    background: transparent;
+    -webkit-transform: skew(20deg); /* Chrome, Opera */
+    transform: skew(51deg); /* Padrão */
+}
+
+#diagonal p {
+    max-height: 20px;
+    transform: rotate(85deg);
+    font-size: large;
+    font-weight: 500;
+    padding: 3px;
+}
+
 /* ---------------------------- Projeto: Xadrez ------------------------------*/
 
 div.chess-java .img {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/chess.jpg);
+}
+
+/* ---------------------------- Projeto: 2 ------------------------------*/
+
+.projeto2 > .img{
+    background-image: url(/imagens/interrogacao.jpg);
+    background-position: center;
+}
+
+/* ---------------------------- Projeto: 3 ------------------------------*/
+
+.projeto3 > .img{
+    background-image: url(/imagens/interrogacao.jpg);
+    background-position: center;
 }
 
 /*------------------------------ Sobre Mim ------------------------------------------*/
