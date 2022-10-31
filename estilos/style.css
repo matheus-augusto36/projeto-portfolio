@@ -237,7 +237,7 @@ main section h1 {
 }
 
 main section.conhecimentos {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/prog.jpg);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/prog-teste.jpg);
     background-size: cover;
     height: 600px;
 }
@@ -278,7 +278,7 @@ main > section.conhecimentos img {
 /* ------------------------------- Projetos ------------------------------------------*/
 
 main section.projetos {
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/prog1.jpg);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/prog1-teste.jpg);
     background-size: cover;
     background-position: top;
     height: 900px;
@@ -381,7 +381,7 @@ main .info-container {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imagens/acoustic-guitar-background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imagens/acoustic-guitar-background1.jpg);
     background-size: cover;
 }
 
@@ -459,7 +459,7 @@ main > section.sobre-mim a {
 
 main section.contato {
     height: 260px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imagens/contact-background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../imagens/contact-background-teste.jpg);
     background-position: right;
     background-size: cover;
 }
