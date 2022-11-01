@@ -149,9 +149,8 @@ Grandes telas: acima de 1200px
         border: 2px solid whitesmoke;
         border-top: 0;
         border-bottom: 0;
-        -webkit-transform: skew(20deg); /* Chrome, Opera */
-        transform: skew(60deg); /* Padrão */
-        z-index: 1000;
+        -webkit-transform: skew(55deg); /* Chrome, Opera */
+        transform: skew(55deg); /* Padrão */
     }
 
     #diagonal p {

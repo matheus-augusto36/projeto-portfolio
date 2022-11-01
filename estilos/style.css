@@ -367,19 +367,28 @@ main section.projetos > div.projetos-container div#projeto:hover {
     z-index: 8;
 }
 
+section.projetos #faixa {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 #diagonal {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 45px;
+    width: 65px;
     height: 100%;
     border: 2px solid whitesmoke;
     border-top: 0;
     border-bottom: 0;
     background: transparent;
-    -webkit-transform: skew(20deg); /* Chrome, Opera */
-    transform: skew(40deg); /* Padrão */
+    -webkit-transform: skew(50deg); /* Chrome, Opera */
+    transform: skew(50deg); /* Padrão */
 }
 
 #diagonal p {
