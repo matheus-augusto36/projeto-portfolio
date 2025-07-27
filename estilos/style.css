@@ -282,7 +282,7 @@ main section.projetos {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../imagens/prog1-teste.jpg);
     background-size: cover;
     background-position: top;
-    height: 900px;
+    height: 1100px;
 }
 
 main a {
@@ -314,14 +314,14 @@ section.projetos div.texto {
 
 main section.projetos h2 {
     color: whitesmoke;
-    font-size: medium;
+    font-size: smaller;
     text-align: center;
     width: 150px;
     margin: 5px;
 }
 
 main > section.projetos p {
-    height: 100px;
+    height: 140px;
     width: 90%;
     color: whitesmoke;
     text-align: justify;
@@ -400,10 +400,10 @@ section.projetos #faixa {
     padding: 3px;
 }
 
-/* ---------------------------- Projeto: Xadrez ------------------------------*/
+/* ---------------------------- Projeto: Analise de Acidentes SP ------------------------------*/
 
 div.chess-java .img {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/chess.jpg);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/dash_acidentes.png);
 }
 
 /* ---------------------------- Projeto: 2 ------------------------------*/
