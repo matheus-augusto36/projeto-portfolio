@@ -409,8 +409,8 @@ div.chess-java .img {
 /* ---------------------------- Projeto: 2 ------------------------------*/
 
 .projeto2 > .img{
-    background-image: url(../imagens/interrogacao.jpg);
-    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../imagens/print_sql.png);
+    background-position: left;
 }
 
 /* ---------------------------- Projeto: 3 ------------------------------*/
