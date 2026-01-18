@@ -98,6 +98,7 @@ Grandes telas: acima de 1200px
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+        max-height: 50vh;
     }
 
     section.conhecimentos h1{
@@ -163,8 +164,21 @@ Grandes telas: acima de 1200px
 
     /*------------------------ Sobre-mim ------------------------*/
 
+       main > section.sobre-mim {
+        max-height: 70vh;
+    }
+
     main > section.sobre-mim p {
         font-size: large;
+        max-width: 70%;
+    }
+
+      main > section.sobre-mim a {
+        margin: auto;
+    }
+
+      main > section > div.texto {
+        margin: 10px;
     }
 
     main .info-container {

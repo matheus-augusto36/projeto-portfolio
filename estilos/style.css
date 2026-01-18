@@ -447,7 +447,7 @@ main section.info-sobre-mim h2 {
 }
 
 main section.sobre-mim {
-    height: 730px;
+    height: 120vh;
     min-height: 690px;
 }
 
@@ -471,14 +471,14 @@ main section.sobre-mim > div.info-container .img {
     background-size: cover;
     background-position: left center;
     background-image: url(../imagens/eu.jpeg);
-    margin-top: 35px;
+    margin-top: 10px;
 }
 
 
 section.sobre-mim div.texto {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 85%;
     align-items: center;
     flex-grow: 1;
     justify-content: space-around;
@@ -499,11 +499,12 @@ main > section.sobre-mim p {
     text-align: justify;
     font-size: small;
     display: inline-block;
-    margin: 5px 10px;
+    margin: 15px 10px;
 }
 
 main > section.sobre-mim a {
     width: 90px;
+    margin-top: 70%;
 }
 
 /*------------------------- Contato -----------------------------*/
